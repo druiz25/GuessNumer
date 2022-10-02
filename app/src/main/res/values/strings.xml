@@ -10,7 +10,7 @@
     <string name="esEtTextRespuesta" />
     <string name="esTvTextResultado" />
     <string name="esTvHintResultado">resultado</string>
-    <string name="esTvTextoFinal">TERMINASTE</string>
+    <string name="esTvTextoFinal">FIN</string>
 
     <string name="enApp_name">Guess the number</string>
     <string name="enEtHintUser">User</string>
@@ -23,5 +23,5 @@
     <string name="enEtTextRespuesta" />
     <string name="enTvTextResultado" />
     <string name="enTvHintResultado">Result</string>
-    <string name="enTvTextoFinal">Finished</string>
+    <string name="enTvTextoFinal">END</string>
 </resources>
