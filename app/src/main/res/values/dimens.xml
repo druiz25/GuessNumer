@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="genMargin">50dp</dimen>
+    <dimen name="btnJugMargin">25dp</dimen>
+    <dimen name="btnResMargin">25dp</dimen>
+    <dimen name="tvTextFinMarg">60dp</dimen>
+    <dimen name="tvTextFinTopMarg">300dp</dimen>
+</resources>

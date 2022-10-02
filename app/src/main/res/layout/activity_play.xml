@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".iu.PlayActivity">
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/genMargin"
+        android:autofillHints=""
+        android:hint="@string/esTvHintResultado"
+        android:text="@string/esTvTextResultado"
+        android:textColorHint="@color/black" />
+
+    <EditText
+        android:id="@+id/etRespuesta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/genMargin"
+        android:autofillHints=""
+        android:hint="@string/esEtHintRespuesta"
+        android:inputType="number"
+        android:text="@string/esEtTextRespuesta"
+        android:textColorHint="@color/black" />
+
+    <Button
+        android:id="@+id/btnResponder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/btnResMargin"
+        android:text="@string/esBtResponderText" />
+
+</LinearLayout>

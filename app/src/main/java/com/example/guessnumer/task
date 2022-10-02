@@ -1,0 +1,23 @@
+Este proyecto puntuará como Competencia profesional (que forma parte del 30% de la nota del primer trimestre).
+El objetivo de este juego es permitir al usuario adivinar un número entre 1 y 100 en una serie de intentos que el usuario indicará.
+Esta aplicación consta de tres Activity o interfaces gráficas:
+
+-ConfigActivity: es la primera Activity de nuestra aplicación y pide el nombre del jugador/a en un campo EditText y
+ el número de intentos en los que quiere adivinar el juego en otro campo EditText. Una vez el usuario ha introducido ambos campos (no pueden ser vacíos)
+ se pasa a la siguiente actividad que es el juego en sí, mediante un botón o Button que muestra el texto ¡A jugar!
+
+-PlayActivity: hay un campo EditText donde el usuario introduce el número que piensa que es,
+ una vez pulse sobre el botón Button saldrá un mensaje diciendo si es mayor o menor en un campo TextView y
+ la posibilidad de volver a intentarlo si no ha superado el número de intentos mediante otro Button que borra el mensaje y el número anteriormente introducido.
+
+-EndPlayActivity: es la interfaz final y muestra al jugador si ha acertado el número de intentos que ha consumido y si no ha acertado el número final.
+El juego DEBE estar libre de errores para puntuar y se debe aplicar los contenidos aprendidos:
+
+El proyecto debe estar bien estructurado y utilizar los recursos de Android (@color, @dimen...).
+La aplicación estará en dos idiomas con lo cual se debe utilizar el recurso @string a la hora de introducir el texto en cada componente vista o View.
+Cada Activity debe tener un comentario inicial indicando su funcionalidad.
+Se debe aplicar la programación orientada a objetos en la solución del ejercicio, con lo cual la información del juego estará en una clase POJO.
+Se debe refactorizar el juego, es decir, el código debe ser legible y la solución no debe ser compleja.
+Se valorará la innovación que el alumno/a quiera añadir al proyecto. Indicar dicha innovación en el fichero README.md del proyecto.
+Adjuntar a la tarea un fichero con el formato PRO_DEINT1_Apellidos_Nombre que contenta la ruta del proyecto o bien el nombre del usuario dentro de GitHub.
+Recuerda que tiene que existir un fichero README.md dentro del proyecto que explica la funcionalidad del ejercicio.

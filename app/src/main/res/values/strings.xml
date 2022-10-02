@@ -1,0 +1,27 @@
+<resources>
+    <string name="esApp_name">Adivina el numero</string>
+    <string name="esEtHintUser">Usuario</string>
+    <string name="esEtHintIntentos">Nº de intentos</string>
+    <string name="esEtTextUser" />
+    <string name="esEtNumTries" />
+    <string name="esBtJugarText">!A jugar¡</string>
+    <string name="esBtResponderText">Jugar</string>
+    <string name="esEtHintRespuesta">Respuesta</string>
+    <string name="esEtTextRespuesta" />
+    <string name="esTvTextResultado" />
+    <string name="esTvHintResultado">resultado</string>
+    <string name="esTvTextoFinal">TERMINASTE</string>
+
+    <string name="enApp_name">Guess the number</string>
+    <string name="enEtHintUser">User</string>
+    <string name="enEtHintIntentos">Nº of tries</string>
+    <string name="enEtTextUser" />
+    <string name="enEtNumTries" />
+    <string name="enBtJugarText">!Let\'s play¡</string>
+    <string name="enBtResponderText">Play</string>
+    <string name="enEtHintRespuesta">response</string>
+    <string name="enEtTextRespuesta" />
+    <string name="enTvTextResultado" />
+    <string name="enTvHintResultado">Result</string>
+    <string name="enTvTextoFinal">Finished</string>
+</resources>
