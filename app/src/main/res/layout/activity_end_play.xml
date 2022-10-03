@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/tvTextFinMarg"
         android:layout_marginTop="@dimen/tvTextFinTopMarg"
-        android:text="@string/esTvTextoFinal"
+        android:text="@string/tvTextoFinal"
         android:layout_gravity="center"
         android:textColor="@color/black" />
 </LinearLayout>

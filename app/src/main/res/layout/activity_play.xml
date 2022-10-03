@@ -12,8 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/genMargin"
         android:autofillHints=""
-        android:hint="@string/esTvHintResultado"
-        android:text="@string/esTvTextResultado"
+        android:hint="@string/tvHintResultado"
+        android:text="@string/tvTextResultado"
         android:textColorHint="@color/black" />
 
     <EditText
@@ -22,10 +22,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/genMargin"
         android:autofillHints=""
-        android:hint="@string/esEtHintRespuesta"
+        android:hint="@string/etHintRespuesta"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="@string/esEtTextRespuesta"
+        android:text="@string/etTextRespuesta"
         android:textColorHint="@color/black" />
 
     <Button
@@ -33,6 +33,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/btnResMargin"
-        android:text="@string/esBtResponderText" />
+        android:text="@string/btResponderText" />
 
 </LinearLayout>

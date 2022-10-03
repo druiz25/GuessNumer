@@ -12,10 +12,10 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/genMargin"
         android:autofillHints=""
-        android:hint="@string/esEtHintUser"
+        android:hint="@string/etHintUser"
         android:inputType="text"
         android:minHeight="48dp"
-        android:text="@string/esEtTextUser"
+        android:text="@string/etTextUser"
         android:textColorHint="@color/black" />
 
     <EditText
@@ -24,17 +24,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/genMargin"
         android:autofillHints=""
-        android:hint="@string/esEtHintIntentos"
+        android:hint="@string/etHintIntentos"
         android:inputType="number"
         android:minHeight="48dp"
-        android:text="@string/esEtNumTries"
+        android:text="@string/etNumTries"
         android:textColorHint="@color/black" />
 
     <Button
         android:id="@+id/btnJugar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/esBtJugarText"
+        android:text="@string/btJugarText"
         android:layout_margin="@dimen/btnJugMargin" />
 
 </LinearLayout>

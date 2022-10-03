@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="btResponderText">Play</string>
+    <string name="etHintRespuesta">Answer</string>
+    <string name="btJugarText">Let\'s play!</string>
+    <string name="etHintIntentos">Nº of tries</string>
+    <string name="etHintUser">User</string>
+    <string name="tvTextoFinal">END</string>
+    <string name="tvHintResultado">result</string>
+    <string name="app_name">Guess the number</string>
+</resources>
