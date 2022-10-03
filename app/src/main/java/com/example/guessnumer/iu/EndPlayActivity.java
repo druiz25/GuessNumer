@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.widget.TextView;
-
-import com.example.guessnumer.R;
 import com.example.guessnumer.data.PartidaGuessNumer;
+import com.example.guessnumer.databinding.ActivityEndPlayBinding;
 
 /**
  * <h1>Proyecto GuessNumer</h1>
@@ -19,18 +17,16 @@ import com.example.guessnumer.data.PartidaGuessNumer;
  * </ol>
  *
  * @author Daniel Ruiz
- * @version 1.0
+ * @version 2.0
  */
 public class EndPlayActivity extends AppCompatActivity {
-
-    private TextView tvTextoFinal;
+    private ActivityEndPlayBinding bind;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_end_play);
-
-        tvTextoFinal = findViewById(R.id.tvTextoFinal);
+        bind = ActivityEndPlayBinding.inflate(getLayoutInflater());
+        setContentView(bind.getRoot());
         Bundle bundle = getIntent().getExtras();
         PartidaGuessNumer partida = bundle.getParcelable("partida");
         resultadoPartida(partida);
@@ -40,9 +36,9 @@ public class EndPlayActivity extends AppCompatActivity {
     public void resultadoPartida(PartidaGuessNumer partida)
     {
         if (partida.isVictoria()) {
-            tvTextoFinal.setText("!Felicidades¡ Acertaste despues de fallar "+partida.getVecFalladas()+" veces.");
+            bind.tvTextoFinal.setText("!Felicidades¡ Acertaste despues de fallar "+partida.getVecFalladas()+" veces.");
         }else {
-            tvTextoFinal.setText("!Fallaste¡ el número secreto era "+partida.getNumSecreto());
+            bind.tvTextoFinal.setText("!Fallaste¡ el número secreto era "+partida.getNumSecreto());
         }
     }
 }

@@ -8,25 +8,27 @@
 
     <EditText
         android:id="@+id/etUser"
-        android:inputType="text"
         android:layout_width="323dp"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/genMargin"
+        android:autofillHints=""
         android:hint="@string/esEtHintUser"
+        android:inputType="text"
+        android:minHeight="48dp"
         android:text="@string/esEtTextUser"
-        android:textColorHint="@color/black"
-        android:autofillHints="" />
+        android:textColorHint="@color/black" />
 
     <EditText
         android:id="@+id/etNumTries"
-        android:inputType="number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/genMargin"
+        android:autofillHints=""
         android:hint="@string/esEtHintIntentos"
+        android:inputType="number"
+        android:minHeight="48dp"
         android:text="@string/esEtNumTries"
-        android:textColorHint="@color/black"
-        android:autofillHints="" />
+        android:textColorHint="@color/black" />
 
     <Button
         android:id="@+id/btnJugar"

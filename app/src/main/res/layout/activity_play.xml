@@ -24,6 +24,7 @@
         android:autofillHints=""
         android:hint="@string/esEtHintRespuesta"
         android:inputType="number"
+        android:minHeight="48dp"
         android:text="@string/esEtTextRespuesta"
         android:textColorHint="@color/black" />
 

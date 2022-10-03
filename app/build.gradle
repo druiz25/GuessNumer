@@ -6,6 +6,10 @@ android {
     namespace 'com.example.guessnumer'
     compileSdk 32
 
+    viewBinding {
+        enabled = true
+    }
+
     defaultConfig {
         applicationId "com.example.guessnumer"
         minSdk 21

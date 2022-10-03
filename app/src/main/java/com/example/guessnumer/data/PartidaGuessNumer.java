@@ -20,7 +20,7 @@ public class PartidaGuessNumer implements Serializable, Parcelable {
     private Integer numTries;
     private Integer vecFalladas;
     private Integer numSecreto;
-    private  boolean victoria;
+    private final boolean victoria;
 
 
     /**
@@ -76,7 +76,6 @@ public class PartidaGuessNumer implements Serializable, Parcelable {
 
 
     //region metodos de la interfaz Parceable
-
     public static final Creator<PartidaGuessNumer> CREATOR = new Creator<PartidaGuessNumer>() {
         @Override
         public PartidaGuessNumer createFromParcel(Parcel in) {
@@ -137,7 +136,5 @@ public class PartidaGuessNumer implements Serializable, Parcelable {
         }
         victoria = in.readByte() != 0;
     }
-
-
     //endregion
 }

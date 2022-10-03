@@ -1,14 +1,11 @@
 package com.example.guessnumer.iu;
-import com.example.guessnumer.R;
 import com.example.guessnumer.data.PartidaGuessNumer;
+import com.example.guessnumer.databinding.ActivityPlayBinding;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.Random;
@@ -23,49 +20,44 @@ import java.util.Random;
  * </ol>
  *
  * @author Daniel Ruiz
- * @version 1.0
+ * @version 2.0
  */
 public class PlayActivity extends AppCompatActivity {
 
+    private ActivityPlayBinding bind;
     private final Random rnd = new Random();
     private Integer numVecFall;
     private Integer numAdiv;
     private Integer numInten;
     private String usuario;
-    private EditText etRespuesta;
-    private TextView tvResultado;
-    private Button btnResponder;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_play);
-        etRespuesta = findViewById(R.id.etRespuesta);
-        tvResultado = findViewById(R.id.tvResultado);
-        btnResponder = findViewById(R.id.btnResponder);
+        bind = ActivityPlayBinding.inflate(getLayoutInflater());
+        setContentView(bind.getRoot());
         Bundle bundle = getIntent().getExtras();
         PartidaGuessNumer partida = bundle.getParcelable("partida");
         numInten = partida.getNumTries();
         usuario = partida.getUsuario();
         numAdiv = rnd.nextInt(100-1) + 1;
         numVecFall = 0;
-        btnResponder.setOnClickListener(view -> comprobarRespuesta());
+        bind.btnResponder.setOnClickListener(view -> comprobarRespuesta());
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        etRespuesta = null;
-        tvResultado = null;
+        bind = null;
     }
 
     public void comprobarRespuesta() {
-        if (etRespuesta.getText().toString().trim().equals(""))
+        if (bind.etRespuesta.getText().toString().trim().equals(""))
         {
             Toast.makeText(this, "Debe introducir un valor antes de preguntar si es correcto", Toast.LENGTH_SHORT).show();
             return;
         }
-        if (etRespuesta.getText().toString().equals(numAdiv.toString())) {
+        if (bind.etRespuesta.getText().toString().equals(numAdiv.toString())) {
             Bundle bundleFinPartida = new Bundle();
             PartidaGuessNumer resultadoFinal = new  PartidaGuessNumer(usuario, numInten, numVecFall ,numAdiv , true);
             bundleFinPartida.putParcelable("partida", resultadoFinal);
@@ -73,10 +65,10 @@ public class PlayActivity extends AppCompatActivity {
             intent.putExtras(bundleFinPartida);
             startActivity(intent);
         }else {
-            if (Integer.parseInt(etRespuesta.getText().toString()) < numAdiv) {
-                tvResultado.setText("El numero introducido es menor que el numero secreto");
+            if (Integer.parseInt(bind.etRespuesta.getText().toString()) < numAdiv) {
+                bind.tvResultado.setText("El numero introducido es menor que el numero secreto");
             }else {
-                tvResultado.setText("El numero introducido es mayor que el numero secreto");
+                bind.tvResultado.setText("El numero introducido es mayor que el numero secreto");
             }
             numInten--;
             numVecFall++;
@@ -90,6 +82,6 @@ public class PlayActivity extends AppCompatActivity {
             intent.putExtras(bundleFinPartida);
             startActivity(intent);
         }
-        etRespuesta.setText("");
+        bind.etRespuesta.setText("");
     }
 }
